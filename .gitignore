@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 作業用インポートフォルダ
+_archive-import:/
+
+# Editor
+.vscode/
+.idea/

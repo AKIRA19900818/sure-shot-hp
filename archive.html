@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCHIVE | SURE SHOT</title>
+  <meta name="description" content="SURE SHOT 過去の開催アーカイブ。渋谷FS. でのこれまでの一夜たち。">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Serif+JP:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="archive">
+
+  <div class="grain" aria-hidden="true"></div>
+  <div data-nav></div>
+
+  <!-- ===================== ARCHIVE ===================== -->
+  <section class="section page-section" id="archive">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">ARCHIVE</p>
+        <h2 class="section__title">過去のイベント</h2>
+      </div>
+
+      <!-- 過去イベント: data/events.json の archive_events を新しい順にギャラリー表示 -->
+      <div class="gallery-grid" id="archiveList"></div>
+    </div>
+  </section>
+
+  <div data-footer></div>
+
+  <script src="data/events.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

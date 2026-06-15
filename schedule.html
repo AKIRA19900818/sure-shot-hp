@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCHEDULE | SURE SHOT</title>
+  <meta name="description" content="SURE SHOT の次回イベント・今後の予定。渋谷FS. にて開催。チケットは LivePocket。">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Serif+JP:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="schedule">
+
+  <div class="grain" aria-hidden="true"></div>
+  <div data-nav></div>
+
+  <!-- ===================== SCHEDULE (次回イベント) ===================== -->
+  <section class="section page-section" id="schedule">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">SCHEDULE</p>
+        <h2 class="section__title">次回イベント</h2>
+      </div>
+
+      <div class="next-event fade-in" id="nextEvent"></div>
+
+      <p class="schedule__note fade-in">
+        チケットはLivePocketにて販売。Instagram
+        <a href="https://www.instagram.com/sure_shot_2024_/" target="_blank" rel="noopener noreferrer">@sure_shot_2024_</a>
+        で最新情報を更新中。
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== UPCOMING (今後の予定) ===================== -->
+  <section class="section section--dark" id="upcoming">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">UPCOMING</p>
+        <h2 class="section__title">今後の予定</h2>
+      </div>
+
+      <div class="events-grid" id="upcomingEvents"></div>
+    </div>
+  </section>
+
+  <div data-footer></div>
+
+  <script src="data/events.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

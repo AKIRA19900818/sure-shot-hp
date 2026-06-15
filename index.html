@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SURE SHOT | 渋谷FS. ブラックミュージックイベントシリーズ</title>
+  <meta name="description" content="SURE SHOT — 終電で帰れて、ブラックミュージックを堪能できるライブイベント。渋谷FS.で開催されるイベントシリーズ。">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Serif+JP:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- フィルムグレイン(質感) -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- 共通ナビ (main.js が注入) -->
+  <div data-nav></div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__bg-orb hero__bg-orb--1"></div>
+      <div class="hero__bg-orb hero__bg-orb--2"></div>
+      <div class="hero__bg-orb hero__bg-orb--3"></div>
+      <div class="hero__grid-lines"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__label">SHIBUYA FS. BLACK MUSIC EVENT SERIES</p>
+      <h1 class="hero__title">
+        <img src="images/logo.png" alt="SURE SHOT" class="hero__logo-img">
+      </h1>
+      <p class="hero__tagline">終電で帰れて、<br>ブラックミュージックを堪能できるライブイベント。</p>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">ABOUT</p>
+        <h2 class="section__title">SURE SHOTとは</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__main fade-in">
+          <p class="about__lead">
+            終電前に解散。<br>
+            それでも、夜は終わらない。
+          </p>
+          <p class="about__body">
+            SURE SHOTは、ブラックミュージックを軸に、ジャンルもキャリアも違うアーティストたちが一夜のステージで出会うライブシリーズ。それぞれのパフォーマンスが途切れることなく重なり合い、ひと続きの流れになっていく。
+          </p>
+          <p class="about__body">
+            知っている名前がそこにあっても、なくても。ひとりで来ても、誰かと来ても。終電の時間を気にしながら、今夜だけの一夜に身を委ねてほしい。
+          </p>
+        </div>
+
+        <div class="about__values">
+          <div class="value-card fade-in">
+            <div class="value-card__num" aria-hidden="true">01</div>
+            <h3 class="value-card__title">終電前に、満たされる</h3>
+            <p class="value-card__text">終電で帰れる時間に収まるから、次の日を気にせず音楽に没頭できる。</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="value-card__num" aria-hidden="true">02</div>
+            <h3 class="value-card__title">出会いがある編成</h3>
+            <p class="value-card__text">毎回異なるラインナップ。ジャンルも経歴も違うアーティストが同じ夜に立つことで、新しい発見が生まれる。</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="value-card__num" aria-hidden="true">03</div>
+            <h3 class="value-card__title">一人でも溶け込める空気</h3>
+            <p class="value-card__text">知らない名前でも、一人での来場でも気構えずに楽しめる雰囲気を大切にしている。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SCHEDULE (次回イベント / ホームはここで完結) ===================== -->
+  <section class="section section--dark" id="schedule">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">SCHEDULE</p>
+        <h2 class="section__title">次回イベント</h2>
+      </div>
+
+      <!-- 次回イベント: data/events.json の next_event を表示 -->
+      <div class="next-event fade-in" id="nextEvent"></div>
+
+      <p class="schedule__note fade-in">
+        チケットはLivePocketにて販売。Instagram
+        <a href="https://www.instagram.com/sure_shot_2024_/" target="_blank" rel="noopener noreferrer">@sure_shot_2024_</a>
+        で最新情報を更新中。
+      </p>
+
+    </div>
+  </section>
+
+  <!-- 共通フッター (main.js が注入) -->
+  <div data-footer></div>
+
+  <!-- イベントデータ (file:// でもサーバー無しで読み込める) -->
+  <script src="data/events.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
