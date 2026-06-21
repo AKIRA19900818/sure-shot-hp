@@ -62,11 +62,17 @@
           <textarea class="form-input form-textarea" id="message" name="message" placeholder="ご相談・ご希望の詳細をご自由にご記入ください（自己紹介、SNS・音源リンク、ご希望の時期、企画内容など）" rows="7"></textarea>
         </div>
 
-        <button type="submit" class="btn btn--primary btn--full btn--large">
+        <p class="form-note form-note--error" id="formNote" aria-live="polite" hidden></p>
+        <button type="submit" class="btn btn--primary btn--full btn--large" id="formSubmit">
           送信する
         </button>
-        <p class="form-note" id="formNote" aria-live="polite"></p>
       </form>
+
+      <div class="form-success" id="formSuccess" hidden>
+        <div class="form-success__icon" aria-hidden="true">✓</div>
+        <p class="form-success__title">送信が完了しました</p>
+        <p class="form-success__body">内容を確認の上、担当者よりご連絡いたします。</p>
+      </div>
     </div>
   </section>
 

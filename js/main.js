@@ -514,27 +514,42 @@
   function initApplyForm() {
     var form = document.getElementById('contactForm');
     var note = document.getElementById('formNote');
+    var successEl = document.getElementById('formSuccess');
+    var submitBtn = document.getElementById('formSubmit');
     if (!form) return;
 
-    var setNote = function (message, type) {
+    var showError = function (msg) {
       if (!note) return;
-      note.textContent = message;
-      note.classList.remove('form-note--success', 'form-note--error');
-      if (type) note.classList.add('form-note--' + type);
+      note.textContent = msg;
+      note.hidden = false;
+    };
+
+    var clearError = function () {
+      if (!note) return;
+      note.textContent = '';
+      note.hidden = true;
+    };
+
+    var showSuccess = function () {
+      form.hidden = true;
+      if (successEl) successEl.hidden = false;
     };
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      clearError();
 
       if (!form.checkValidity()) {
-        setNote('必須項目（*）をご確認ください。', 'error');
+        showError('必須項目（*）をご確認ください。');
         var firstInvalid = form.querySelector(':invalid');
         if (firstInvalid) firstInvalid.focus();
         return;
       }
 
-      var submitBtn = form.querySelector('[type="submit"]');
-      if (submitBtn) submitBtn.disabled = true;
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = '送信中…';
+      }
 
       fetch(window.location.pathname, {
         method: 'POST',
@@ -542,20 +557,19 @@
         body: new URLSearchParams(new FormData(form)).toString()
       })
         .then(function (res) {
-          if (!res.ok) throw new Error('Network response was not ok');
-          form.reset();
-          form.style.display = 'none';
-          setNote('送信が完了しました。内容を確認の上、担当者よりご連絡いたします。', 'success');
+          if (!res.ok) throw new Error(res.status);
+          showSuccess();
         })
         .catch(function () {
-          setNote('送信に失敗しました。時間をおいて再度お試しください。', 'error');
-          if (submitBtn) submitBtn.disabled = false;
+          showError('送信に失敗しました。時間をおいて再度お試しください。');
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = '送信する';
+          }
         });
     });
 
-    form.addEventListener('input', function () {
-      if (note && note.classList.contains('form-note--error')) setNote('', null);
-    });
+    form.addEventListener('input', clearError);
   }
 
   /* ===================================================
