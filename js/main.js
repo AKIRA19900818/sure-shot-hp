@@ -524,19 +524,33 @@
     };
 
     form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
       if (!form.checkValidity()) {
-        e.preventDefault();
         setNote('必須項目（*）をご確認ください。', 'error');
         var firstInvalid = form.querySelector(':invalid');
         if (firstInvalid) firstInvalid.focus();
         return;
       }
-      var action = form.getAttribute('action');
-      if (!action || action === '#') {
-        e.preventDefault();
-        setNote('お問い合わせありがとうございます。担当者よりご連絡いたします。', 'success');
-        form.reset();
-      }
+
+      var submitBtn = form.querySelector('[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch(window.location.pathname, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('Network response was not ok');
+          form.reset();
+          form.style.display = 'none';
+          setNote('送信が完了しました。内容を確認の上、担当者よりご連絡いたします。', 'success');
+        })
+        .catch(function () {
+          setNote('送信に失敗しました。時間をおいて再度お試しください。', 'error');
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
 
     form.addEventListener('input', function () {

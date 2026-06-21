@@ -937,8 +937,9 @@ button { cursor: pointer; font-family: inherit; }
   min-height: 20px;
   margin-top: 6px;
 }
-.form-note--success { color: #4fd08a; }
+.form-note--success { color: #4fd08a; font-size: 15px; }
 .form-note--error   { color: var(--pink); }
+.form-honeypot { display: none !important; }
 
 /* ---- Footer ---- */
 

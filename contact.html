@@ -29,8 +29,14 @@
         </p>
       </div>
 
-      <!-- action属性に送信先URLを設定してください -->
-      <form class="apply-form fade-in" id="contactForm" action="#" method="post" novalidate>
+      <form class="apply-form fade-in" id="contactForm"
+            name="contact" method="post"
+            data-netlify="true" netlify-honeypot="bot-field"
+            novalidate>
+        <input type="hidden" name="form-name" value="contact">
+        <p class="form-honeypot" aria-hidden="true">
+          <label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        </p>
         <div class="form-group">
           <label class="form-label" for="inquiryType">ご相談内容 <span class="required" aria-label="必須">*</span></label>
           <select class="form-input form-select" id="inquiryType" name="inquiryType" required>
