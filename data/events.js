@@ -1,13 +1,14 @@
 /* 自動連携用: data/events.json と同一内容。
    file:// でもサーバー無しで読み込めるよう window.SURE_SHOT_DATA に代入する。
-   ※データ更新時は events.json を編集し、このファイルにも同じ内容を反映してください。 */
+   ※データ更新時は events.json を編集し、このファイルにも同じ内容を反映してください。
+   next_event / upcoming_events / archive_events への振り分けは js/main.js が
+   実際の日付で自動判定するため、ここではどのバケットに入れても構わない
+   （開催日翌日になると自動的にアーカイブへ移動する）。 */
 window.SURE_SHOT_DATA = {
   "concept": "SURE SHOTは、「終電で帰れる時間帯にブラックミュージックを軸とした音楽をしっかり体験できる一夜」をテーマに定期開催されるライブイベント。ブラックミュージックから派生した多彩な音楽が、ライブとDJを通してシームレスにつながっていく。知っている名前がなくても、ひとりでも、そのまま楽しめる。渋谷FS.で体験してほしいイベントです。",
   "venue": {
     "name": "渋谷FS."
   },
-  "today": "2026-06-14",
-
   "next_event": {
     "id": "proof-vol3",
     "title": "SURE SHOT -Proof-",

@@ -232,6 +232,7 @@
 
   function renderAll(data) {
     try {
+      sortEventsByDate(data);
       renderConcept(data);
       renderNextEvent(data);
       renderUpcoming(data);
@@ -241,6 +242,34 @@
       console.error('イベントの描画に失敗しました:', err);
       showDataError();
     }
+  }
+
+  /* next_event / upcoming_events / archive_events を実際の日付で振り分ける。
+     開催日当日まではNEXT/今後の予定として表示し、開催日の翌日になったら
+     自動でアーカイブへ移行する（JSON側の手動振り分けは不要）。 */
+  function sortEventsByDate(data) {
+    var todayStr = todayDateStr();
+
+    var all = {};
+    var add = function (ev) { if (ev && ev.id) all[ev.id] = ev; };
+    add(data.next_event);
+    (data.upcoming_events || []).forEach(add);
+    (data.archive_events || []).forEach(add);
+
+    var list = Object.keys(all).map(function (id) { return all[id]; });
+    var future = list.filter(function (ev) { return ev.date >= todayStr; }).sort(byDateAsc);
+    var past = list.filter(function (ev) { return ev.date < todayStr; }).sort(byDateDesc);
+
+    data.next_event = future[0] || null;
+    data.upcoming_events = future.slice(1);
+    data.archive_events = past;
+  }
+
+  function todayDateStr() {
+    var d = new Date();
+    var mm = String(d.getMonth() + 1).padStart(2, '0');
+    var dd = String(d.getDate()).padStart(2, '0');
+    return d.getFullYear() + '-' + mm + '-' + dd;
   }
 
   /* ---- ABOUT: concept ---- */
