@@ -196,7 +196,7 @@ window.SURE_SHOT_DATA = {
       "venue": "渋谷FS.",
       "open_start": "OPEN 17:30 / START 18:00",
       "price": "ADV ¥2,000 / DOOR ¥2,000 (+1 Drink)",
-      "flyer": "images/events/extra-2025-07-27.png",
+      "flyer": "images/events/extra-2025-07-27.jpg",
       "lineup": [
         { "role": "LIVE", "name": "Qlama", "instagram": "https://www.instagram.com/qlama_the_music" },
         { "role": "LIVE", "name": "TOY", "instagram": "https://www.instagram.com/toy_ofakind" },
@@ -216,7 +216,7 @@ window.SURE_SHOT_DATA = {
       "venue": "渋谷FS.",
       "open_start": "OPEN 17:30 / START 18:00",
       "price": "ADV ¥2,500 / DOOR ¥3,000 (+1 Drink)",
-      "flyer": "images/events/sureshot-2025-06-07.png",
+      "flyer": "images/events/sureshot-2025-06-07.jpg",
       "lineup": [
         { "role": "LIVE", "name": "kingo", "instagram": "https://www.instagram.com/kingo_jp" },
         { "role": "LIVE", "name": "AKIRA", "instagram": "https://www.instagram.com/akira_sing818_/" },
@@ -302,7 +302,7 @@ window.SURE_SHOT_DATA = {
       "venue": "渋谷FS.",
       "open_start": "OPEN 17:30 / START 18:00",
       "price": "ADV ¥2,500 / DOOR ¥3,000 (+1 Drink)",
-      "flyer": "images/events/extra-2026-03-28.png",
+      "flyer": "images/events/extra-2026-03-28.jpg",
       "lineup": [
         { "role": "LIVE", "name": "möshigigam", "instagram": "https://www.instagram.com/moshigigam/" },
         { "role": "LIVE", "name": "Show Chick Boy", "instagram": "https://www.instagram.com/showchickboy" },
@@ -353,7 +353,7 @@ window.SURE_SHOT_DATA = {
       "venue": "渋谷FS.",
       "open_start": "OPEN 17:00 / START 17:30",
       "price": "ADV ¥1,800 / DOOR ¥2,500 (+1 Drink)",
-      "flyer": "images/events/sureshot-2024-08-31.png",
+      "flyer": "images/events/sureshot-2024-08-31.jpg",
       "lineup": [
         { "role": "LIVE", "name": "AKIRA", "instagram": "https://www.instagram.com/akira_sing818_/" },
         { "role": "LIVE", "name": "Hazy Blue", "instagram": "https://www.instagram.com/hazy_blue_" },
