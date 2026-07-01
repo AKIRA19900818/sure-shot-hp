@@ -23,7 +23,7 @@ window.SURE_SHOT_DATA = {
       { "role": "LIVE", "name": "Ax11", "instagram": "https://www.instagram.com/ax11_aki" },
       { "role": "LIVE", "name": "EINN", "instagram": "https://www.instagram.com/einn_me" },
       { "role": "LIVE", "name": "ROLW", "instagram": "https://www.instagram.com/rolw__" },
-      { "role": "OPENING ACT LIVE", "name": "Kay", "instagram": "https://www.instagram.com/kay_kaito_0104" },
+      { "role": "LIVE", "name": "Kay", "instagram": "https://www.instagram.com/kay_kaito_0104" },
       { "role": "DJ", "name": "ＭＲ．", "instagram": "https://www.instagram.com/mr_hajime2" },
       { "role": "DJ", "name": "rinsanity", "instagram": "https://www.instagram.com/rin_sanity" }
     ]
@@ -44,9 +44,9 @@ window.SURE_SHOT_DATA = {
         { "role": "LIVE", "name": "EMI MARIA", "instagram": "https://www.instagram.com/emimaria1987" },
         { "role": "LIVE", "name": "Yunoa", "instagram": "https://www.instagram.com/____yunoa____" },
         { "role": "LIVE", "name": "myRs", "instagram": "https://www.instagram.com/myrs_desu" },
-        { "role": "LIVE (feat.)", "name": "Yuta Takashima", "instagram": "https://www.instagram.com/yutafp" },
+        { "role": "LIVE", "name": "Yuta Takashima", "instagram": "https://www.instagram.com/yutafp" },
         { "role": "LIVE", "name": "里音", "instagram": "https://www.instagram.com/singsatone" },
-        { "role": "OPENING ACT LIVE", "name": "七愛", "instagram": "https://www.instagram.com/nanami_7plus" },
+        { "role": "LIVE", "name": "七愛", "instagram": "https://www.instagram.com/nanami_7plus" },
         { "role": "DJ", "name": "Mary A.", "instagram": "https://www.instagram.com/djmary_a" },
         { "role": "DJ", "name": "SORA", "instagram": "https://www.instagram.com/djsora7" }
       ]
@@ -62,7 +62,7 @@ window.SURE_SHOT_DATA = {
       "ticket_url": "https://livepocket.jp/e/fs20260628",
       "flyer": "images/events/extra-vol5.jpg",
       "lineup": [
-        { "role": "GUEST LIVE", "name": "HiiT FACTORY", "instagram": "https://www.instagram.com/hiit_factory_" },
+        { "role": "LIVE", "name": "HiiT FACTORY", "instagram": "https://www.instagram.com/hiit_factory_" },
         { "role": "LIVE", "name": "I'be", "instagram": "https://www.instagram.com/uuu.ibe__" },
         { "role": "LIVE", "name": "Orihuzak", "instagram": "https://www.instagram.com/orihuzak__" },
         { "role": "LIVE", "name": "s.o.p", "instagram": "https://www.instagram.com/imahero_s.o.p_" },
@@ -121,10 +121,10 @@ window.SURE_SHOT_DATA = {
       "price": "ADV ¥3,000 / DOOR ¥3,500 (+1 Drink)",
       "flyer": "images/events/extra-vol6.jpg",
       "lineup": [
-        { "role": "GUEST ACT", "name": "雲のすみか", "instagram": "https://www.instagram.com/kumonosumica", "spotify": "https://open.spotify.com/artist/0W9ihQuyMFNWXx8nMDzv35" },
-        { "role": "GUEST ACT", "name": "ひろたうた", "instagram": "https://www.instagram.com/hirotauta", "spotify": "https://open.spotify.com/artist/0tAkrRVzIkouVs32xKD9gG" },
-        { "role": "GUEST ACT", "name": "Qlama", "instagram": "https://www.instagram.com/qlama_the_music", "spotify": "https://open.spotify.com/artist/0tGV852uf2VKpgELlBJGP6" },
-        { "role": "GUEST ACT (Band Set)", "name": "myRs", "instagram": "https://www.instagram.com/myrs_desu", "spotify": "https://open.spotify.com/artist/2uw2bxG4qU71isVJhGxIge" },
+        { "role": "LIVE", "name": "雲のすみか", "instagram": "https://www.instagram.com/kumonosumica", "spotify": "https://open.spotify.com/artist/0W9ihQuyMFNWXx8nMDzv35" },
+        { "role": "LIVE", "name": "ひろたうた", "instagram": "https://www.instagram.com/hirotauta", "spotify": "https://open.spotify.com/artist/0tAkrRVzIkouVs32xKD9gG" },
+        { "role": "LIVE", "name": "Qlama", "instagram": "https://www.instagram.com/qlama_the_music", "spotify": "https://open.spotify.com/artist/0tGV852uf2VKpgELlBJGP6" },
+        { "role": "LIVE", "name": "myRs", "instagram": "https://www.instagram.com/myrs_desu", "spotify": "https://open.spotify.com/artist/2uw2bxG4qU71isVJhGxIge" },
         { "role": "LIVE", "name": "Keitaro Matsumori", "instagram": "https://www.instagram.com/keitaromatsumori", "spotify": "https://open.spotify.com/artist/5SJw7gy5oCn1HJ0t1gIqNr" },
         { "role": "LIVE", "name": "RIURA", "instagram": "https://www.instagram.com/riuramusic", "spotify": "https://open.spotify.com/artist/1dauklb8FMCE4DMxNVUn2n" },
         { "role": "LIVE", "name": "snake buts", "instagram": "https://www.instagram.com/snake_buts", "spotify": "https://open.spotify.com/artist/1dauklb8FMCE4DMxNVUn2n" },
@@ -148,7 +148,7 @@ window.SURE_SHOT_DATA = {
         { "role": "LIVE", "name": "myRs", "instagram": "https://www.instagram.com/myrs_desu" },
         { "role": "LIVE", "name": "SANDEI", "instagram": "https://www.instagram.com/sandei_tokyo" },
         { "role": "LIVE", "name": "Tellar", "instagram": "https://www.instagram.com/tellar_sun" },
-        { "role": "OPENING ACT LIVE", "name": "i'be", "instagram": "https://www.instagram.com/uuu.ibe__" }
+        { "role": "LIVE", "name": "i'be", "instagram": "https://www.instagram.com/uuu.ibe__" }
       ]
     },
     {
@@ -164,7 +164,7 @@ window.SURE_SHOT_DATA = {
         { "role": "LIVE", "name": "BENTO KIDZ", "instagram": "https://www.instagram.com/bento_kidz" },
         { "role": "LIVE", "name": "Kouichi Arakawa", "instagram": "https://www.instagram.com/kouichi_arakawa" },
         { "role": "LIVE", "name": "TOY", "instagram": "https://www.instagram.com/toy_ofakind" },
-        { "role": "OPENING ACT LIVE", "name": "used rhythms", "instagram": "https://www.instagram.com/usedrhythms" },
+        { "role": "LIVE", "name": "used rhythms", "instagram": "https://www.instagram.com/usedrhythms" },
         { "role": "DJ", "name": "SORA", "instagram": "https://www.instagram.com/djsora7" }
       ]
     },
@@ -198,8 +198,8 @@ window.SURE_SHOT_DATA = {
       "price": "ADV ¥2,500 / DOOR ¥3,000 (+1 Drink)",
       "flyer": "images/events/extra-2025-10-05.jpg",
       "lineup": [
-        { "role": "GUEST LIVE", "name": "Hiit FACTORY", "instagram": "https://www.instagram.com/hiit_factory_" },
-        { "role": "GUEST LIVE", "name": "Sigma-T", "instagram": "https://www.instagram.com/sigma_t_1chibju/" },
+        { "role": "LIVE", "name": "Hiit FACTORY", "instagram": "https://www.instagram.com/hiit_factory_" },
+        { "role": "LIVE", "name": "Sigma-T", "instagram": "https://www.instagram.com/sigma_t_1chibju/" },
         { "role": "LIVE", "name": "Ámina (w.a.u)", "instagram": "https://www.instagram.com/amina.2.00" },
         { "role": "LIVE", "name": "Iny", "instagram": "https://www.instagram.com/inestleyou/" },
         { "role": "LIVE", "name": "ISAFAT", "instagram": "https://www.instagram.com/isafat_____" },
@@ -334,9 +334,9 @@ window.SURE_SHOT_DATA = {
         { "role": "LIVE", "name": "used rhythms", "instagram": "https://www.instagram.com/usedrhythms/" },
         { "role": "LIVE", "name": "里音", "instagram": "https://www.instagram.com/singsatone" },
         { "role": "LIVE", "name": "中川英明", "instagram": "https://www.instagram.com/hideaki_tgg" },
-        { "role": "SOLO DANCE SHOWCASE", "name": "Ruuji", "instagram": "https://www.instagram.com/aidoruuji" },
-        { "role": "SOLO DANCE SHOWCASE", "name": "Ruru", "instagram": "https://www.instagram.com/iji_fu07" },
-        { "role": "SOLO DANCE SHOWCASE", "name": "SHION", "instagram": "https://www.instagram.com/___shion___2000" },
+        { "role": "DANCER", "name": "Ruuji", "instagram": "https://www.instagram.com/aidoruuji" },
+        { "role": "DANCER", "name": "Ruru", "instagram": "https://www.instagram.com/iji_fu07" },
+        { "role": "DANCER", "name": "SHION", "instagram": "https://www.instagram.com/___shion___2000" },
         { "role": "DJ", "name": "Kazuki Sugiyama", "instagram": "https://www.instagram.com/kazuki_acile/" },
         { "role": "DJ", "name": "MR.", "instagram": "https://www.instagram.com/mr_hajime2" },
         { "role": "DJ", "name": "nsm", "instagram": "https://www.instagram.com/yuma_nsm/" }

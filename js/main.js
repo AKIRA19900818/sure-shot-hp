@@ -425,8 +425,8 @@
   function roleClass(role) {
     var r = String(role || '').toUpperCase();
     if (r.indexOf('DJ') !== -1) return 'artist-card__role--dj';
-    if (r.indexOf('GUEST') !== -1) return 'artist-card__role--guest';
-    if (r.indexOf('OPENING') !== -1 || r.indexOf('DANCE') !== -1 || r.indexOf('BEAT') !== -1) return 'artist-card__role--feature';
+    if (r.indexOf('DANCER') !== -1) return 'artist-card__role--dancer';
+    if (r.indexOf('BEAT') !== -1) return 'artist-card__role--beat';
     return 'artist-card__role--live';
   }
 

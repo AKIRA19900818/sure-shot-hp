@@ -717,7 +717,9 @@ button { cursor: pointer; font-family: inherit; }
 .gallery-card {
   display: flex;
   flex-direction: column;
+  transition: transform var(--t);
 }
+.gallery-card:hover { transform: translateY(-4px); }
 
 .gallery-card__flyer {
   position: relative;
@@ -725,9 +727,24 @@ button { cursor: pointer; font-family: inherit; }
   background: var(--bg-card);
   border: 1px solid var(--line-soft);
   aspect-ratio: 4 / 5;
-  transition: border-color var(--t);
+  transition: border-color var(--t), box-shadow var(--t);
 }
-.gallery-card:hover .gallery-card__flyer { border-color: var(--line); }
+.gallery-card:hover .gallery-card__flyer {
+  border-color: var(--line);
+  box-shadow: 0 24px 44px -24px rgba(0, 0, 0, 0.65);
+}
+/* ホバーで下端にアクセントの光る帯を出す（artist-cardと世界観を統一） */
+.gallery-card__flyer::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--pink), var(--purple), var(--cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s var(--ease2);
+}
+.gallery-card:hover .gallery-card__flyer::after { transform: scaleX(1); }
 .gallery-card__flyer img {
   width: 100%;
   height: 100%;
@@ -772,7 +789,8 @@ button { cursor: pointer; font-family: inherit; }
   color: var(--ink-faint);
   margin-bottom: 8px;
 }
-.gallery-card__venue { color: var(--ink-faint); }
+.gallery-card__venue { color: var(--ink-faint); transition: color var(--t); }
+.gallery-card:hover .gallery-card__venue { color: var(--pink); }
 .gallery-card__title {
   font-family: var(--font-serif);
   font-weight: 500;
@@ -881,10 +899,10 @@ button { cursor: pointer; font-family: inherit; }
   border: 1px solid var(--line);
   color: var(--ink-faint);
 }
-.artist-card__role--live  { border-color: var(--line); color: var(--ink-sub); }
-.artist-card__role--dj    { border-color: rgba(70, 214, 255, 0.35); color: var(--cyan); }
-.artist-card__role--guest { border-color: rgba(165, 92, 255, 0.4); color: var(--purple); }
-.artist-card__role--feature { border-color: rgba(255, 45, 111, 0.4); color: var(--pink); }
+.artist-card__role--live   { border-color: var(--line); color: var(--ink-sub); }
+.artist-card__role--dj     { border-color: rgba(70, 214, 255, 0.35); color: var(--cyan); }
+.artist-card__role--dancer { border-color: rgba(165, 92, 255, 0.4); color: var(--purple); }
+.artist-card__role--beat   { border-color: rgba(255, 45, 111, 0.4); color: var(--pink); }
 
 .artist-card__socials { display: flex; gap: 12px; }
 .artist-card__social {
