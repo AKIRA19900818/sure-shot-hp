@@ -110,6 +110,27 @@ window.SURE_SHOT_DATA = {
         { "role": "DJ", "name": "OGS", "instagram": "https://www.instagram.com/ogusu_kojiro/" },
         { "role": "DJ", "name": "B-HOPE", "instagram": "https://www.instagram.com/bhope1028/" }
       ]
+    },
+    {
+      "id": "extra-vol6",
+      "title": "SURE SHOT -extra-",
+      "date": "2026-07-26",
+      "day_label": "07/26 (Sun)",
+      "venue": "渋谷FS.",
+      "open_start": "OPEN 16:00 / START 16:30",
+      "price": "ADV ¥3,000 / DOOR ¥3,500 (+1 Drink)",
+      "flyer": "images/events/extra-vol6.jpg",
+      "lineup": [
+        { "role": "GUEST ACT", "name": "雲のすみか", "instagram": "https://www.instagram.com/kumonosumica", "spotify": "https://open.spotify.com/artist/0W9ihQuyMFNWXx8nMDzv35" },
+        { "role": "GUEST ACT", "name": "ひろたうた", "instagram": "https://www.instagram.com/hirotauta", "spotify": "https://open.spotify.com/artist/0tAkrRVzIkouVs32xKD9gG" },
+        { "role": "GUEST ACT", "name": "Qlama", "instagram": "https://www.instagram.com/qlama_the_music", "spotify": "https://open.spotify.com/artist/0tGV852uf2VKpgELlBJGP6" },
+        { "role": "GUEST ACT (Band Set)", "name": "myRs", "instagram": "https://www.instagram.com/myrs_desu", "spotify": "https://open.spotify.com/artist/2uw2bxG4qU71isVJhGxIge" },
+        { "role": "LIVE", "name": "Keitaro Matsumori", "instagram": "https://www.instagram.com/keitaromatsumori", "spotify": "https://open.spotify.com/artist/5SJw7gy5oCn1HJ0t1gIqNr" },
+        { "role": "LIVE", "name": "RIURA", "instagram": "https://www.instagram.com/riuramusic", "spotify": "https://open.spotify.com/artist/1dauklb8FMCE4DMxNVUn2n" },
+        { "role": "LIVE", "name": "snake buts", "instagram": "https://www.instagram.com/snake_buts", "spotify": "https://open.spotify.com/artist/1dauklb8FMCE4DMxNVUn2n" },
+        { "role": "DJ", "name": "rinsanity", "instagram": "https://www.instagram.com/rin_sanity" },
+        { "role": "DJ", "name": "Rocky Nakashio", "instagram": "https://www.instagram.com/rockynakashio" }
+      ]
     }
   ],
 
