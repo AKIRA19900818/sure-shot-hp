@@ -376,8 +376,12 @@
   }
 
   function artistCardHtml(a) {
+    var avatar = '<span class="artist-card__avatar" aria-hidden="true">' + esc(initialOf(a.name)) + '</span>';
+
     var roles = a.roles.length
-      ? '<p class="artist-card__roles">' + esc(a.roles.join(' / ')) + '</p>'
+      ? '<div class="artist-card__roles">' + a.roles.map(function (r) {
+          return '<span class="artist-card__role ' + roleClass(r) + '">' + esc(r) + '</span>';
+        }).join('') + '</div>'
       : '';
 
     var socials = SOCIALS
@@ -399,11 +403,31 @@
 
     return '' +
       '<article class="artist-card fade-in">' +
-        '<h3 class="artist-card__name">' + esc(a.name) + '</h3>' +
+        '<div class="artist-card__head">' +
+          avatar +
+          '<h3 class="artist-card__name">' + esc(a.name) + '</h3>' +
+        '</div>' +
         roles +
         socials +
         '<ul class="artist-card__events">' + events + '</ul>' +
       '</article>';
+  }
+
+  // カード先頭に添えるイニシャル（1〜2文字）
+  function initialOf(name) {
+    var s = String(name || '').trim();
+    var m = s.match(/[A-Za-z0-9]+/);
+    if (m) return m[0].slice(0, 2).toUpperCase();
+    return s.slice(0, 1);
+  }
+
+  // 役割ごとにアクセントカラーを振り分け（既存のseries系配色と揃える）
+  function roleClass(role) {
+    var r = String(role || '').toUpperCase();
+    if (r.indexOf('DJ') !== -1) return 'artist-card__role--dj';
+    if (r.indexOf('GUEST') !== -1) return 'artist-card__role--guest';
+    if (r.indexOf('OPENING') !== -1 || r.indexOf('DANCE') !== -1 || r.indexOf('BEAT') !== -1) return 'artist-card__role--feature';
+    return 'artist-card__role--live';
   }
 
   function seriesShort(title) {
